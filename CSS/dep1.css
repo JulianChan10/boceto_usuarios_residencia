@@ -1,0 +1,168 @@
+/* =========================================================================
+   dep1.css — Orientación Educativa (diseño profesional e institucional)
+   ========================================================================= */
+
+/* ===== Variables ===== */
+:root{
+  /* Paleta institucional */
+  --primary:#1B396A;         /* Azul TecNM */
+  --primary-800:#142B4E;
+  --primary-50:#F3F6FB;
+
+  /* Neutros UI */
+  --text:#1A232E;
+  --muted:#5B6573;
+  --border:#DFE5EF;
+  --bg:#F7F9FC;
+  --card:#FFFFFF;
+
+  /* Efectos */
+  --ring:#2B66FF33;
+  --shadow-sm:0 1px 6px rgba(16,24,40,.06);
+  --shadow-md:0 4px 14px rgba(16,24,40,.08);
+
+  /* Medidas */
+  --container:1100px;
+  --r-lg:14px; --r-md:10px;
+  --gap:20px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{margin:0;background:#fff;color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+
+/* ===== Contenedor ===== */
+.oe-container{
+  max-width:var(--container);
+  margin:24px auto;
+  padding:24px;
+  background:linear-gradient(180deg,var(--bg),#fff 32%);
+  border-radius:18px;
+  box-shadow:var(--shadow-sm);
+}
+
+/* ===== Títulos globales ===== */
+.oe-title{
+  margin:0 0 6px;
+  font-weight:800;
+  font-size:clamp(26px,3vw,34px);
+  color:var(--primary);
+  text-align:center;
+  letter-spacing:.2px;
+}
+.oe-intro{
+  margin:0 0 22px;
+  color:var(--muted);
+  text-align:center;
+  font-size:clamp(15px,1.7vw,16px);
+}
+
+/* ===== Secciones ===== */
+.oe-section{ margin:34px 0 10px; }
+
+/* Encabezado profesional de sección */
+.section-head.pro{
+  position:relative;
+  padding:18px 18px 16px 18px;
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  background:linear-gradient(0deg,var(--primary-50),#fff 85%);
+}
+.section-head.pro::before{
+  /* barra institucional a la izquierda */
+  content:""; position:absolute; left:0; top:0; bottom:0; width:6px;
+  background:var(--primary);
+  border-top-left-radius:var(--r-lg);
+  border-bottom-left-radius:var(--r-lg);
+}
+.section-head.pro .overline{
+  display:block; font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--primary-800); opacity:.8; margin-left:6px;
+}
+.section-head.pro h2{
+  margin:2px 0 4px 6px;
+  font-weight:900; font-size:clamp(20px,2.4vw,26px);
+  color:var(--primary-800);
+  line-height:1.25;
+}
+.section-head.pro .sub{
+  margin:0 0 0 6px;
+  color:#364154; opacity:.9; font-size:15px;
+}
+
+/* Slab de contenido (bloque con 2 columnas) */
+.content-slab{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  padding:18px;
+  margin-top:14px;
+  box-shadow:var(--shadow-sm);
+  display:grid; gap:var(--gap);
+}
+@media (min-width: 920px){
+  .content-slab{ grid-template-columns:1fr 1fr; align-items:start; }
+}
+
+/* Slot (columna) */
+.slot h3{
+  margin:0 0 10px;
+  font-size:18px; font-weight:800; color:var(--primary-800);
+  display:flex; align-items:center; gap:10px;
+}
+.slot h3 i{ color:var(--primary); opacity:.95; }
+
+/* Listas */
+.doclist, .linklist{
+  list-style:none; margin:0; padding:0; display:grid; gap:12px;
+}
+.doclist li, .linklist li{
+  border:1px solid var(--border);
+  border-radius:var(--r-md);
+  background:#fff;
+  padding:12px 14px;
+  transition: box-shadow .15s ease, transform .15s ease, border-color .15s ease;
+}
+.doclist li:hover, .linklist li:hover{
+  transform: translateY(-1px);
+  border-color:#CFD9EA;
+  box-shadow:var(--shadow-md);
+}
+.doclist a, .linklist a{
+  color:#16325C; text-decoration:none; font-weight:650;
+  display:inline-flex; align-items:center; gap:10px;
+  text-underline-offset:2px;
+}
+.doclist a:hover, .linklist a:hover{ text-decoration:underline; }
+.doclist a:focus-visible, .linklist a:focus-visible{
+  outline:none; box-shadow:0 0 0 4px var(--ring); border-radius:8px;
+}
+
+/* Iconos de prefijo (Font Awesome) */
+.doclist a::before{
+  font-family:"Font Awesome 6 Free"; font-weight:900; content:"\f1c1"; /* file-pdf */
+  color:#9F2B2B;
+}
+.linklist a::before{
+  font-family:"Font Awesome 6 Free"; font-weight:900; content:"\f0c1"; /* link */
+  color:var(--primary);
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0F1216; --card:#111622; --text:#EDEFF3; --muted:#C5CCD6; --border:#2A3342;
+    --primary:#1B396A; --primary-800:#AECBFF;
+    --shadow-sm:0 6px 18px rgba(0,0,0,.35);
+    --shadow-md:0 10px 24px rgba(0,0,0,.45);
+  }
+  .oe-container{ background:linear-gradient(180deg,#0B0E12,#0F1216 58%); box-shadow:none; }
+  .section-head.pro{ background:linear-gradient(0deg,#0f1725,#0b101b 85%); border-color:#2A3342; }
+  .section-head.pro .overline{ color:#C9DAFF; opacity:.85; }
+  .section-head.pro h2{ color:#DDE9FF; }
+  .section-head.pro .sub{ color:#C7D6EE; opacity:.9; }
+  .content-slab{ background:#0f1420; border-color:#2A3342; }
+  .doclist li, .linklist li{ background:#0b101b; border-color:#2A3342; }
+  .doclist a, .linklist a{ color:#CFE0FF; }
+  .doclist a::before{ color:#FF9A92; }
+}

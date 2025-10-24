@@ -1,0 +1,168 @@
+/* =========================================================================
+   dep5.css — Métodos y Medios (diseño profesional e institucional)
+   ========================================================================= */
+
+/* ===== Variables ===== */
+:root{
+  --primary:#1B396A; --primary-800:#142B4E; --primary-50:#F3F6FB;
+  --text:#1A232E; --muted:#5B6573; --border:#DFE5EF;
+  --bg:#F7F9FC; --card:#FFFFFF;
+  --ring:#2B66FF33;
+  --shadow-sm:0 1px 6px rgba(16,24,40,.06);
+  --shadow-md:0 4px 14px rgba(16,24,40,.08);
+  --container:1100px; --r-lg:14px; --r-md:10px; --gap:20px;
+}
+
+*{box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{margin:0;background:#fff;color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+
+/* ===== Contenedor y títulos ===== */
+.mm-container{
+  max-width:var(--container);
+  margin:24px auto;
+  padding:24px;
+  background:linear-gradient(180deg,var(--bg),#fff 32%);
+  border-radius:18px;
+  box-shadow:var(--shadow-sm);
+}
+.mm-title{
+  margin:0 0 6px; font-weight:800; font-size:clamp(26px,3vw,34px);
+  color:var(--primary); text-align:center; letter-spacing:.2px;
+}
+.mm-intro{
+  margin:0 0 22px; color:var(--muted); text-align:center;
+  font-size:clamp(15px,1.7vw,16px);
+}
+
+.mm-section{ margin:34px 0 10px; }
+
+/* ===== Header de sección profesional ===== */
+.section-head.pro{
+  position:relative;
+  padding:18px 18px 16px 18px;
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  background:linear-gradient(0deg,var(--primary-50),#fff 85%);
+}
+.section-head.pro::before{
+  content:""; position:absolute; left:0; top:0; bottom:0; width:6px;
+  background:var(--primary);
+  border-top-left-radius:var(--r-lg);
+  border-bottom-left-radius:var(--r-lg);
+}
+.section-head.pro .overline{
+  display:block; font-size:12px; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--primary-800); opacity:.8; margin-left:6px;
+}
+.section-head.pro h2{
+  margin:2px 0 4px 6px; font-weight:900; font-size:clamp(20px,2.4vw,26px);
+  color:var(--primary-800); line-height:1.25;
+}
+.section-head.pro .sub{ margin:0 0 0 6px; color:#364154; opacity:.9; font-size:15px; }
+
+/* ===== Slab (marco de contenido) ===== */
+.slab{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  padding:18px;
+  margin-top:14px;
+  box-shadow:var(--shadow-sm);
+}
+.slab.one{ display:block; }
+
+/* ===== Carrusel de banners ===== */
+.banner-carousel{ position:relative; overflow:hidden; }
+.carousel-track{ display:flex; gap:16px; transition:transform .4s ease; }
+
+.banner-card{
+  min-width:calc(50% - 8px); /* 2 visibles en desktop */
+  background:#fff; border:1px solid var(--border);
+  border-radius:14px; overflow:hidden; box-shadow:var(--shadow-sm);
+  transition:.15s ease;
+}
+.banner-card:hover{
+  transform:translateY(-1px);
+  border-color:#CFD9EA; box-shadow:var(--shadow-md);
+}
+.banner-card a{ display:block; line-height:0; }
+.banner-card img{
+  display:block; width:100%; aspect-ratio:16/6; object-fit:cover;
+}
+.banner-meta{
+  display:flex; justify-content:space-between; align-items:center;
+  padding:10px 14px;
+}
+.banner-meta h3{ margin:0; font-size:16px; font-weight:700; color:var(--primary); }
+.banner-meta .meta{ font-size:12px; color:var(--muted); }
+
+/* Flechas */
+.carousel-btn{
+  position:absolute; top:50%; transform:translateY(-50%);
+  background:rgba(27,57,106,.9); color:#fff; border:none;
+  padding:10px; border-radius:50%; font-size:20px; cursor:pointer; z-index:2;
+}
+.carousel-btn.prev{ left:8px; } .carousel-btn.next{ right:8px; }
+.carousel-btn:hover{ background:rgba(27,57,106,1); }
+
+/* Dots */
+.carousel-dots{
+  display:flex; gap:8px; justify-content:center; align-items:center;
+  margin-top:10px;
+}
+.carousel-dot{
+  width:10px; height:10px; border-radius:50%;
+  background:#c7d2e5; border:1px solid #aab7cc; cursor:pointer;
+}
+.carousel-dot.active{ background:#1B396A; border-color:#1B396A; }
+
+/* Responsivo carrusel */
+@media (max-width:768px){ .banner-card{ min-width:100%; } }
+
+/* ===== Panel Evaluación Docente ===== */
+.ed-panel{
+  display:flex; gap:16px; align-items:center; justify-content:space-between;
+  border:1px solid var(--border); border-radius:12px; padding:16px 18px;
+  background:#fff;
+}
+.ed-text h3{
+  margin:0 0 6px; font-size:18px; font-weight:800; color:var(--primary-800);
+  display:flex; align-items:center; gap:10px;
+}
+.ed-text p{ margin:0; color:var(--muted); }
+.ed-text i{ color:var(--primary); }
+
+.ed-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:10px 16px; border-radius:10px; text-decoration:none;
+  background:var(--primary); color:#fff; font-weight:700;
+  border:1px solid #16325C;
+  transition:filter .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+.ed-btn:hover{ filter:brightness(.98); transform:translateY(-1px); box-shadow:var(--shadow-md); }
+.ed-btn:focus-visible{ outline:none; box-shadow:0 0 0 4px var(--ring); }
+
+/* ===== Dark Mode ===== */
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0F1216; --card:#111622; --text:#EDEFF3; --muted:#C5CCD6; --border:#2A3342;
+    --primary:#1B396A; --primary-800:#AECBFF;
+    --shadow-sm:0 6px 18px rgba(0,0,0,.35);
+    --shadow-md:0 10px 24px rgba(0,0,0,.45);
+  }
+  .mm-container{ background:linear-gradient(180deg,#0B0E12,#0F1216 58%); box-shadow:none; }
+  .section-head.pro{ background:linear-gradient(0deg,#101627,#0b101b 85%); border-color:#2A3342; }
+  .section-head.pro .overline{ color:#C9DAFF; opacity:.85; }
+  .section-head.pro h2{ color:#DDE9FF; }
+  .section-head.pro .sub{ color:#C7D6EE; opacity:.9; }
+  .slab{ background:#0f1420; border-color:#2A3342; }
+  .banner-card{ background:#0b101b; border-color:#2A3342; }
+  .banner-meta h3{ color:#CFE0FF; }
+  .banner-meta .meta{ color:#AEBAD1; }
+  .carousel-dot{ background:#324158; border-color:#41557a; }
+  .carousel-dot.active{ background:#8fb0ff; border-color:#8fb0ff; }
+  .ed-panel{ background:#0b101b; border-color:#2A3342; }
+  .ed-text h3{ color:#DDE9FF; }
+  .ed-btn{ background:#1B396A; border-color:#2A3342; }
+}

@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    /* background-color: black; */
+}
+html{
+    scroll-behavior: smooth;
+}
+.ancho{
+    max-width: 1300px;
+    margin: auto;
+    /* border: 1px red solid; */
+}
+
+:root{
+    --letra1: ;
+    --letra2: ;
+    
+    --guinda: #611232;
+    --azultec: #1B396A;
+    --color3: ;
+    --color4: ;
+}
+
+header{
+    background-color: var(--guinda);
+    /* height: 60px; */
+    /* display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between; */
+}
+    .contenedor_cabecera{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /* border: 1px black solid; */
+        padding: 5px;
+    }
+        .contenedor_cabecera figure{
+            width: 120px;
+        }
+            .contenedor_cabecera figure img{
+                width: 100%;
+                display: block;
+            }
+        .botones_cabecera{
+            /* border: 1px white solid; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+            .botones_cabecera a{
+                font-size: 14px;
+                /* border: 1px white solid; */
+                padding: 7px 10px;
+                text-decoration: none;
+                color: white;
+            }
+
+.contenedor_logos{
+    /* border: 1px black solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+    .logos_itm {
+        /* border: 1px red solid; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin: 5px 15px;
+    }
+        .logos_itm figure {
+            /* border: 1px black solid; */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* OPCIONAL */
+        .logo1{
+            width: 300px;
+        }
+        /* ------ */
+
+        .logos_itm img {
+            max-height: 70px; /* altura máxima uniforme */
+            width: 100%;/* ancho se ajusta proporcionalmente */
+            display: block;   /* elimina espacio extra debajo de la imagen */
+        }
+
+
+    .logos_contacto{
+        /* border: 1px blue solid; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 5px 25px;
+        gap: 15px;
+    }
+        .logos_contacto figure{
+            width: 35px;
+        }
+            .logos_contacto figure img{
+                width: 100%;
+                display: block;
+            }
+
+.contenedor_nav{
+    background-color: var(--azultec);
+}
+    .contenedor_menu{
+        /* border: 1px black solid; */
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* padding: 15px; */
+    }
+    .contenedor_menu ul {
+        list-style: none;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+    .contenedor_menu ul li a {
+        /* border: 1px gray solid; */
+        color: white;
+        padding: 8px 30px;
+        text-decoration: none;
+        display: inline-block;
+    }

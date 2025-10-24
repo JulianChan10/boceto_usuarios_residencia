@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departamento de Desarrollo Académico</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/responsiveslides/1.55/responsiveslides.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+
+    <section class="contenedor_slide ancho">
+        
+        <div class="contenedor_general">
+            
+            <ul class="rslides">
+                <li><img src="img/slidemain2.jpg" alt="Slide 1"></li>
+                <li><img src="img/slide1main.jpg" alt="Slide 2"></li>
+                <li><img src="img/slidemain3.jpg" alt="Slide 3"></li>
+            </ul>
+        
+            <div class="info_texto">
+                <h1 class="imagens"><img src="img/Logo departamento2.png" alt="Logo Departamento"></h1>
+                <h2 class="titulo">Departamento de Desarrollo Académico</h2>
+                <p class="subtitulo">
+                    El Departamento de Desarrollo Académico es el área responsable de planear, 
+                    coordinar y evaluar las actividades que fortalecen la formación integral de 
+                    los estudiantes y el desarrollo profesional de los docentes.
+                </p>
+            </div>
+
+        </div> </section>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="js/responsiveslides.js"></script> 
+
+    <script>
+      $(function() {
+        $(".rslides").responsiveSlides({
+            auto: true,
+            speed: 500,
+            timeout: 4000,
+            pager: false,
+            nav: false
+        });
+      });
+    </script>
+
+</body>
+</html>

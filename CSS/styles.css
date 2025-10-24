@@ -1,0 +1,130 @@
+/* --- Estilos Generales --- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px; 
+    line-height: 1.5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+.ancho{
+    max-width: 1800px;
+    margin:auto;
+    /* border:1px red solid; */
+}
+
+
+.contenedor_slide {
+    width: 100%;
+}
+
+.contenedor_general {
+    position: relative; 
+    width: 100%;
+    height: auto;
+}
+
+
+.contenedor_general::before {
+    content: "";
+    position: absolute;
+    inset: 0; 
+    background: rgba(0, 0, 0, .50); 
+    z-index: 3; 
+}
+
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    min-height: 400px; 
+    padding: 0;
+    margin: 0;
+    z-index: 1; 
+}
+
+.rslides li {
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto; 
+    float: left;
+    width: 100%;
+    object-fit: cover;
+    min-height: 400px; 
+    border: 0;
+}
+
+.info_texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 4; 
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%; 
+    max-width: 720px; 
+    box-sizing: border-box; 
+}
+
+.imagens img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 100%;
+    max-width: clamp(120px, 20vw, 220px); 
+}
+
+.titulo {
+    color: #fff; 
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif; 
+    font-weight: 800;
+    margin-top: 25px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: clamp(1.25rem, 3.5vw, 2.25rem);
+}
+
+.subtitulo {
+    color: #f0f0f0;
+    font-weight: 400; 
+    margin-top: 15px;
+    line-height: 1.5;
+    max-width: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+    font-size: clamp(0.9rem, 2.5vw, 1.25rem);
+}
+
+@media (max-width: 480px) {
+    .rslides,
+    .rslides img {
+        min-height: 420px; 
+    }
+
+    .info_texto {
+        padding: 15px;
+    }
+}

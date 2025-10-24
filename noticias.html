@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TecNM | Departamento de Desarrollo Académico | Noticias</title>
+  <link rel="icon" type="image/png" href="img/tecnmicono.ico"/>
+
+  <!-- CSS institucional existente -->
+  <link rel="stylesheet" href="CSS/cabecera.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+
+  <!-- CSS específico de la página -->
+  <link rel="stylesheet" href="CSS/noticias.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'>
+</head>
+<body>
+
+  <!-- ===== Header institucional ===== -->
+  <header>
+    <div class="contenedor_cabecera ancho">
+      <figure>
+        <a href="https://www.gob.mx/" target="_blank" rel="noopener">
+          <img src="img/logo_gobierno.svg" alt="Gobierno de México">
+        </a>
+      </figure>
+      <div class="botones_cabecera">
+        <a href="https://www.gob.mx/gobierno" target="_blank" rel="noopener">Gobierno</a>
+        <a href="https://datos.gob.mx/" target="_blank" rel="noopener">Datos</a>
+        <a href="https://www.gob.mx/" target="_blank" rel="noopener" aria-label="Buscar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="contenedor_logos ancho">
+    <div class="logos_itm">
+      <figure class="logo1">
+        <a href="https://www.gob.mx/sep" target="_blank" rel="noopener">
+          <img src="img/logo-educacion.png" class="logo_ancho" alt="SEP">
+        </a>
+      </figure>
+      <figure class="logo2">
+        <a href="https://www.tecnm.mx/"  target="_blank" rel="noopener">
+          <img src="img/logo-tecnm.png" class="logo_ancho" alt="TecNM">
+        </a>
+      </figure>
+      <figure class="logo3">
+        <a href="https://www.merida.tecnm.mx/" target="_blank" rel="noopener">
+          <img src="img/logo_tec.jpg" class="logo_ancho" alt="IT Mérida">
+        </a>
+      </figure>
+    </div>
+    <div class="logos_contacto">
+      <figure><a href="#"><img src="img/icono-correo.png" alt="Correo"></a></figure>
+      <figure><a href="#"><img src="img/icono-calendario.png" alt="Calendario"></a></figure>
+    </div>
+  </div>
+
+  <!-- ===== Navegación ===== -->
+  <div class="contenedor_nav">
+    <nav class="contenedor_menu ancho" aria-label="Navegación principal">
+      <ul>
+        <span class="rayita">|</span> <li><a href="index.html" aria-label="Inicio"><i class="fa-solid fa-house"></i></a></li> <span class="rayita">|</span>
+        <li><a href="dep1.html">Orientación Educativa</a></li> <span class="rayita">|</span>
+        <li><a href="dep2.html">Tutorías</a></li> <span class="rayita">|</span>
+        <li><a href="dep3.html">Investigación Educativa</a></li> <span class="rayita">|</span>
+        <li><a href="dep4.html">Actualización Docente</a></li> <span class="rayita">|</span>
+        <li><a href="dep5.html">Métodos y Medios Educativos</a></li> <span class="rayita">|</span>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero-head">
+    <div class="ancho hero-wrap">
+      <div class="hero-copy">
+        <h1>Noticias</h1>
+        <p>Comunicados, logros y actividades destacadas del Departamento de Desarrollo Académico.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Listado de noticias ===== -->
+  <main class="ancho main">
+    <h2 class="titulo-seccion">Últimas publicaciones</h2>
+
+    <section class="news-grid">
+      <!-- Tarjeta 1 -->
+      <article class="news-card">
+        <a href="#" class="cover" aria-label="Leer noticia: Título ejemplo 1">
+          <img src="img/slide1main.jpg" alt="Imagen noticia 1">
+          <span class="badge-date"><b>08</b><small>SEP</small></span>
+          <span class="badge-cat">Orientación Educativa</span>
+        </a>
+        <div class="news-body">
+          <h3 class="news-title"><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+          <p class="news-excerpt">Brevísimo resumen de la noticia para invitar a leer el contenido completo…</p>
+          <a class="btn btn--ghost" href="#">Leer más</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 2 -->
+      <article class="news-card">
+        <a href="#" class="cover" aria-label="Leer noticia: Título ejemplo 2">
+          <img src="img/slidemain2.jpg" alt="Imagen noticia 2">
+          <span class="badge-date"><b>15</b><small>SEP</small></span>
+          <span class="badge-cat">Métodos y Medios</span>
+        </a>
+        <div class="news-body">
+          <h3 class="news-title"><a href="#">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</a></h3>
+          <p class="news-excerpt">Otro resumen corto. Información clave y clara para el usuario.</p>
+          <a class="btn btn--ghost" href="#">Leer más</a>
+        </div>
+      </article>
+
+      <!-- Tarjeta 3 -->
+      <article class="news-card">
+        <a href="#" class="cover" aria-label="Leer noticia: Título ejemplo 3">
+          <img src="img/slidemain3.jpg" alt="Imagen noticia 3">
+          <span class="badge-date"><b>20</b><small>SEP</small></span>
+          <span class="badge-cat">Tutorías</span>
+        </a>
+        <div class="news-body">
+          <h3 class="news-title"><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a></h3>
+          <p class="news-excerpt">Breve sinopsis del contenido de la noticia para contexto inmediato.</p>
+          <a class="btn btn--ghost" href="#">Leer más</a>
+        </div>
+      </article>
+
+      <!-- Duplica <article class="news-card"> para más noticias -->
+    </section>
+
+    <!-- Paginación simple (opcional) -->
+    <!--
+    <nav class="pagination" aria-label="Paginación">
+      <a class="page prev" href="#"><i class="fa-solid fa-chevron-left"></i></a>
+      <a class="page active" href="#">1</a>
+      <a class="page" href="#">2</a>
+      <a class="page next" href="#"><i class="fa-solid fa-chevron-right"></i></a>
+    </nav>
+    -->
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="footer_col">
+        <img src="img/logo_gobierno.svg" alt="Gobierno de México" class="footer_logo">
+      </div>
+      <div class="footer_col">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="#">Participa</a></li>
+          <li><a href="#">Marco Jurídico</a></li>
+          <li><a href="#">Plataforma Nacional de Transparencia</a></li>
+          <li><a href="#">Alerta</a></li>
+          <li><a href="#">Denuncia</a></li>
+        </ul>
+      </div>
+      <div class="footer_col">
+        <h3>¿Qué es gob.mx?</h3>
+        <p><strong>Es el portal único de trámites, información y participación ciudadana.</strong> <a href="#">Leer más</a></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

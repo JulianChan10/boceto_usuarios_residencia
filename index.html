@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TecNM | Departamento de Desarrollo Académico</title>
+  <link rel="icon" type="image/png" href="img/tecnmicono.ico"/>
+
+  <!-- CSS propios -->
+  <link rel="stylesheet" href="CSS/cabecera.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/main.css">
+
+  <!-- Dependencias -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/responsiveslides/1.55/responsiveslides.min.css">
+  <script src='https://code.jquery.com/jquery-3.7.1.min.js'></script>
+  <script src="js/responsiveslides.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</head>
+
+<body>
+  <!-- ===== Header institucional ===== -->
+  <header>
+    <div class="contenedor_cabecera">
+      <figure>
+        <a href="https://www.gob.mx/" target="_blank" rel="noopener">
+          <img src="img/logo_gobierno.svg" alt="Gobierno de México">
+        </a>
+      </figure>
+      <div class="botones_cabecera">
+        <a href="https://www.gob.mx/gobierno" target="_blank" rel="noopener">Gobierno</a>
+        <a href="https://datos.gob.mx/" target="_blank" rel="noopener">Datos</a>
+        <a href="https://www.gob.mx/" target="_blank" rel="noopener" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Logos ===== -->
+  <div class="contenedor_logos">
+    <div class="logos_itm">
+      <figure class="logo1">
+        <a href="https://www.gob.mx/sep" target="_blank" rel="noopener">
+          <img src="img/logo-educacion.png" class="logo_ancho" alt="SEP">
+        </a>
+      </figure>
+      <figure class="logo2">
+        <a href="https://www.tecnm.mx/"  target="_blank" rel="noopener">
+          <img src="img/logo-tecnm.png" class="logo_ancho" alt="TecNM">
+        </a>
+      </figure>
+      <figure class="logo3">
+        <a href="https://www.merida.tecnm.mx/" target="_blank" rel="noopener">
+          <img src="img/logo_tec.jpg" class="logo_ancho" alt="IT Mérida">
+        </a>
+      </figure>
+    </div>
+    <div class="logos_contacto">
+      <figure>
+        <a href="#" aria-label="Correo">
+          <img src="img/icono-correo.png" alt="Correo">
+        </a>
+      </figure>
+      <figure>
+        <a href="#" aria-label="Calendario">
+          <img src="img/icono-calendario.png" alt="Calendario">
+        </a>
+      </figure>
+    </div>
+  </div>
+
+  <!-- ===== Navegación ===== -->
+  <div class="contenedor_nav">
+    <nav class="contenedor_menu ancho" aria-label="Navegación principal">
+      <ul>
+        <span class="rayita">|</span> <li><a href="index.html" aria-label="Inicio"><i class="fa-solid fa-house"></i></a></li> <span class="rayita">|</span>
+        <li><a href="dep1.html">Orientación Educativa</a></li> <span class="rayita">|</span>
+        <li><a href="dep2.html">Tutorías</a></li> <span class="rayita">|</span>
+        <li><a href="dep3.html">Investigación Educativa</a></li> <span class="rayita">|</span>
+        <li><a href="dep4.html">Actualización Docente</a></li> <span class="rayita">|</span>
+        <li><a href="dep5.html">Métodos y Medios Educativos</a></li> <span class="rayita">|</span>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- ===== Hero / Slider profesional ===== -->
+  <section class="hero">
+    <ul class="rslides" id="heroSlides" aria-label="Galería principal">
+      <li>
+        <img src="img/slidemain2.jpg" alt="Instalaciones del TecNM Mérida">
+        <div class="hero__overlay"></div>
+        <div class="hero__content ancho">
+          <figure class="hero__brand">
+            <!-- <img src="img/Logo departamento2.png" alt="Departamento de Desarrollo Académico"> -->
+          </figure>
+          <h1 class="hero__title">Departamento de Desarrollo Académico</h1>
+          <p class="hero__subtitle">
+            Fortalecemos la formación integral del estudiantado y el desarrollo profesional del personal docente.
+          </p>
+          <div class="hero__actions">
+            <a href="#coordinaciones" class="btn btn--primary">Explorar coordinaciones</a>
+            <a href="dep4.html#cursos" class="btn btn--ghost">Cursos de actualización</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/slide1main.jpg" alt="Estudiantes en actividad académica">
+        <div class="hero__overlay"></div>
+        <div class="hero__content ancho">
+          <h1 class="hero__title">Acompañamiento académico</h1>
+          <p class="hero__subtitle">Tutorías, orientación, investigación y más.</p>
+          <div class="hero__actions">
+            <a href="dep2.html" class="btn btn--primary">Tutorías</a>
+            <a href="dep1.html" class="btn btn--ghost">Orientación Educativa</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <img src="img/slidemain3.jpg" alt="Docentes en capacitación">
+        <div class="hero__overlay"></div>
+        <div class="hero__content ancho">
+          <h1 class="hero__title">Excelencia docente</h1>
+          <p class="hero__subtitle">Convocatorias, capacitación y reconocimiento.</p>
+          <div class="hero__actions">
+            <a href="dep4.html" class="btn btn--primary">Actualización Docente</a>
+            <a href="dep5.html" class="btn btn--ghost">Métodos y Medios</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- ===== Noticias (carrusel) ===== -->
+  <section class="sec" id="noticias">
+    <div class="ancho">
+      <header class="sec__head sec__head--blue">
+        <h2>Noticias</h2>
+        <p>Información reciente de nuestras actividades.</p>
+      </header>
+
+      <div class="carousel carousel--news" data-autoplay="5000">
+        <button class="c-btn prev" aria-label="Anterior">&#10094;</button>
+
+        <div class="c-track">
+          <!-- Tarjeta 1 -->
+          <article class="news-card c-item">
+            <div class="news-card__media">
+              <img src="img/slide1main.jpg" alt="Imagen noticia 1">
+              <span class="badge-date">08 SEP</span>
+              <span class="badge-cat">Orientación Educativa</span>
+            </div>
+            <div class="news-card__body">
+              <h3>Convocatoria de admisión y difusión de carreras</h3>
+              <a class="link-more" href="#">Leer más »</a>
+            </div>
+          </article>
+          <!-- Tarjeta 2 -->
+          <article class="news-card c-item">
+            <div class="news-card__media">
+              <img src="img/slidemain2.jpg" alt="Imagen noticia 2">
+              <span class="badge-date">15 SEP</span>
+              <span class="badge-cat">Métodos y Medios</span>
+            </div>
+            <div class="news-card__body">
+              <h3>EGEL: publicación de lineamientos y calendario</h3>
+              <a class="link-more" href="#">Leer más »</a>
+            </div>
+          </article>
+          <!-- Tarjeta 3 -->
+          <article class="news-card c-item">
+            <div class="news-card__media">
+              <img src="img/slidemain3.jpg" alt="Imagen noticia 3">
+              <span class="badge-date">20 SEP</span>
+              <span class="badge-cat">Tutorías</span>
+            </div>
+            <div class="news-card__body">
+              <h3>Sesiones informativas y acompañamiento académico</h3>
+              <a class="link-more" href="#">Leer más »</a>
+            </div>
+          </article>
+          <!-- Agrega más .news-card.c-item si lo necesitas -->
+        </div>
+
+        <button class="c-btn next" aria-label="Siguiente">&#10095;</button>
+        <div class="c-dots" aria-label="Paginación"></div>
+      </div>
+
+      <div class="sec__foot">
+        <a href="noticias.html" class="btn btn--ghost">Ver todas las noticias</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Eventos (carrusel) ===== -->
+  <section class="sec sec--alt" id="eventos">
+    <div class="ancho">
+      <header class="sec__head sec__head--blue">
+        <h2>Eventos</h2>
+        <p>Calendario de actividades y eventos académicos.</p>
+      </header>
+
+      <div class="carousel carousel--events" data-autoplay="5000">
+        <button class="c-btn prev" aria-label="Anterior">&#10094;</button>
+
+        <div class="c-track">
+          <article class="event-card c-item">
+            <img class="event-card__bg" src="img/slidemain3.jpg" alt="Evento 1">
+            <span class="chip">Salud y bienestar</span>
+            <div class="event-card__body">
+              <h3>Jornada de bienestar universitario</h3>
+              <div class="meta">
+                <span>📅 08 sep 2025</span>
+                <span>⏰ 11:30 h</span>
+                <span>📍 Holberton</span>
+              </div>
+              <div class="actions">
+                <a href="#" class="btn btn--ghost">Descripción</a>
+                <a href="#" class="btn btn--primary">Ver más</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="event-card c-item">
+            <img class="event-card__bg" src="img/logo-educacion.png" alt="Evento 2">
+            <span class="chip">Arte y cultura</span>
+            <div class="event-card__body">
+              <h3>Foro cultural A. Gomory Aguilar</h3>
+              <div class="meta">
+                <span>📅 08 sep 2025</span>
+                <span>⏰ 13:00 h</span>
+                <span>📍 Foro Cultural</span>
+              </div>
+              <div class="actions">
+                <a href="#" class="btn btn--ghost">Descripción</a>
+                <a href="#" class="btn btn--primary">Ver más</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Más .event-card.c-item si lo requieres -->
+        </div>
+
+        <button class="c-btn next" aria-label="Siguiente">&#10095;</button>
+        <div class="c-dots" aria-label="Paginación"></div>
+      </div>
+
+      <div class="sec__foot">
+        <a class="btn btn--ghost" href="eventos.html">Ver todos los eventos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Galería (carrusel) ===== -->
+  <section class="sec sec--light" id="galeria">
+    <div class="ancho">
+      <header class="sec__head sec__head--blue">
+        <h2>Galería</h2>
+        <p>Evidencias de actividades y programas.</p>
+      </header>
+
+      <div class="carousel carousel--gallery" data-autoplay="5000">
+        <button class="c-btn prev" aria-label="Anterior">&#10094;</button>
+
+        <div class="c-track">
+          <a href="img/Logo departamento2.png" data-fancybox="galeria" class="gitem c-item">
+            <img src="img/Logo departamento2.png" alt="Logotipo del departamento">
+          </a>
+          <a href="img/slide1main.jpg" data-fancybox="galeria" class="gitem c-item">
+            <img src="img/slide1main.jpg" alt="Actividad académica 1">
+          </a>
+          <a href="img/slidemain2.jpg" data-fancybox="galeria" class="gitem c-item">
+            <img src="img/slidemain2.jpg" alt="Actividad académica 2">
+          </a>
+          <a href="img/slidemain3.jpg" data-fancybox="galeria" class="gitem c-item">
+            <img src="img/slidemain3.jpg" alt="Actividad académica 3">
+          </a>
+          <!-- Agrega más .gitem.c-item si lo requieres -->
+        </div>
+
+        <button class="c-btn next" aria-label="Siguiente">&#10095;</button>
+        <div class="c-dots" aria-label="Paginación"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer_container">
+      <div class="footer_col">
+        <img src="img/logo_gobierno.svg" alt="Gobierno de México" class="footer_logo">
+      </div>
+      <div class="footer_col">
+        <h3>Enlaces</h3>
+        <ul>
+          <li><a href="#">Participa</a></li>
+          <li><a href="#">Marco Jurídico</a></li>
+          <li><a href="#">Plataforma Nacional de Transparencia</a></li>
+          <li><a href="#">Alerta</a></li>
+          <li><a href="#">Denuncia</a></li>
+        </ul>
+      </div>
+      <div class="footer_col">
+        <h3>¿Qué es gob.mx?</h3>
+        <p><strong>Es el portal único de trámites, información y participación ciudadana.</strong> <a href="#">Leer más</a></p>
+        <ul>
+          <li><a href="#">Portal de datos abiertos</a></li>
+          <li><a href="#">Declaración de accesibilidad</a></li>
+          <li><a href="#">Términos y condiciones</a></li>
+          <li><a href="#">Política de seguridad</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== JS del slider hero ===== -->
+  <script>
+    $(function () {
+      $("#heroSlides").responsiveSlides({
+        auto: true,
+        speed: 650,
+        timeout: 4800,
+        pager: true,
+        nav: true,
+        pause: true,
+        pauseControls: true,
+        namespace: "rslides"
+      });
+    });
+  </script>
+
+  <!-- ===== JS — Carrusel genérico (Noticias, Eventos, Galería) ===== -->
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const carousels = document.querySelectorAll(".carousel");
+
+    carousels.forEach((car) => {
+      const track   = car.querySelector(".c-track");
+      const prevBtn = car.querySelector(".c-btn.prev");
+      const nextBtn = car.querySelector(".c-btn.next");
+      const dotsBox = car.querySelector(".c-dots");
+      const items   = Array.from(track.querySelectorAll(".c-item"));
+      const intervalMs = parseInt(car.dataset.autoplay || "5000", 10);
+
+      let index = 0, autoplayTimer = null, dots = [];
+
+      function measure(){
+        const first = items[0];
+        if(!first) return { card: 0, gap: 0, visible: 1 };
+        const card = first.getBoundingClientRect().width;
+        const gap  = parseFloat(getComputedStyle(track).gap || 16);
+        const containerW = car.getBoundingClientRect().width;
+        const visible = Math.max(1, Math.round((containerW + gap) / (card + gap)));
+        return { card, gap, visible };
+      }
+      function maxIndex(){ const { visible } = measure(); return Math.max(0, items.length - visible); }
+      function pageCount(){ const { visible } = measure(); return Math.max(1, Math.ceil(items.length / visible)); }
+      function pageIndex(){ const { visible } = measure(); return Math.floor(index / visible); }
+
+      function slideTo(i){
+        index = Math.max(0, Math.min(i, maxIndex()));
+        const { card, gap } = measure();
+        track.style.transform = `translateX(-${index * (card + gap)}px)`;
+        setActiveDot(pageIndex());
+      }
+      function next(){ index < maxIndex() ? slideTo(index+1) : slideTo(0); }
+      function prev(){ index > 0 ? slideTo(index-1) : slideTo(maxIndex()); }
+
+      function buildDots(){
+        dotsBox.innerHTML = ""; dots = [];
+        for(let i=0;i<pageCount();i++){
+          const b = document.createElement("button");
+          b.type = "button";
+          b.setAttribute("aria-label", `Ir a la página ${i+1}`);
+          b.addEventListener("click", () => {
+            const { visible } = measure();
+            slideTo(Math.min(i * visible, maxIndex()));
+            restart();
+          });
+          dotsBox.appendChild(b); dots.push(b);
+        }
+        setActiveDot(pageIndex());
+      }
+      const setActiveDot = (p) => dots.forEach((d,i)=> d.classList.toggle("active", i===p));
+
+      function start(){ stop(); if(intervalMs>0) autoplayTimer = setInterval(next, intervalMs); }
+      function stop(){ if(autoplayTimer) clearInterval(autoplayTimer); }
+      function restart(){ start(); }
+
+      nextBtn.addEventListener("click", ()=>{ next(); restart(); });
+      prevBtn.addEventListener("click", ()=>{ prev(); restart(); });
+
+      [track, dotsBox, prevBtn, nextBtn].forEach(el=>{
+        el && el.addEventListener("mouseenter", stop);
+        el && el.addEventListener("mouseleave", start);
+      });
+
+      buildDots(); slideTo(0); start();
+
+      window.addEventListener("resize", () => {
+        const oldPage = pageIndex();
+        buildDots();
+        const { visible } = measure();
+        slideTo(Math.min(oldPage * visible, maxIndex()));
+      });
+    });
+  });
+  </script>
+</body>
+</html>

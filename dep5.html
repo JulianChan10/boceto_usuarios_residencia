@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/cabecera.css">
+    <link rel="stylesheet" href="CSS/dep5.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <title>TecNM | Departamento de Desarrollo Académico | Métodos y Medios Educativos</title>
+    <link rel="icon" type="image/png" href="img/tecnmicono.ico">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css'>
+</head>
+<body>
+    <header>
+        <div class="contenedor_cabecera ancho">
+            <figure>
+                <a href="https://www.gob.mx/" target="_blank">
+                    <img src="img/logo_gobierno.svg" alt="">
+                </a>
+            </figure>
+            <div class="botones_cabecera">
+                <a href="https://www.gob.mx/gobierno" target="_blank">Gobierno</a>
+                <a href="https://datos.gob.mx/" target="_blank">Datos</a>
+                <a href="https://www.gob.mx/" target="_blank"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenedor_logos ancho">
+        <div class="logos_itm">
+            <figure class="logo1">
+                <a href="https://www.gob.mx/sep" target="_blank">
+                    <img src="img/logo-educacion.png" class="logo_ancho">
+                </a>
+            </figure>
+            <figure class="logo2">
+                <a href="https://www.tecnm.mx/"  target="_blank">
+                    <img src="img/logo-tecnm.png" class="logo_ancho">
+                </a>
+            </figure>
+            <figure class="logo3">
+                <a href="https://www.merida.tecnm.mx/" target="_blank">
+                    <img src="img/logo_tec.jpg" class="logo_ancho">
+                </a>
+            </figure>
+        </div>
+        <div class="logos_contacto">
+            <figure>
+                <a href="#">
+                    <img src="img/icono-correo.png">
+                </a>
+            </figure>
+            <figure>
+                <a href="#">
+                    <img src="img/icono-calendario.png">
+                </a>
+            </figure>
+        </div>
+    </div>
+
+    <div class="contenedor_nav">
+        <nav class="contenedor_menu ancho">
+            <ul>
+                <span class="rayita">|</span> <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li> <span class="rayita">|</span>
+                <li><a href="dep1.html" class="">Orientación Educativa</a></li> <span class="rayita">|</span>
+                <li><a href="dep2.html" class="">Tutorías</a></li> <span class="rayita">|</span>
+                <li><a href="dep3.html" class="">Investigación Educativa</a></li> <span class="rayita">|</span>
+                <li><a href="dep4.html" class="">Actualización Docente</a></li> <span class="rayita">|</span>
+                <li><a href="dep5.html" class="">Métodos y Medios Educativos</a></li> <span class="rayita">|</span>
+            </ul>
+        </nav>
+    </div>
+
+<main class="mm-container" id="main-content">
+  <h1 class="mm-title">Métodos y Medios</h1>
+  <p class="mm-intro">
+    Consulta <strong>Convocatorias y Exámenes</strong>, <strong>Cursos</strong> y acceso directo a la <strong>Evaluación Docente</strong>.
+  </p>
+
+  <!-- ================== Convocatorias y Exámenes ================== -->
+  <section id="convocatorias" class="mm-section">
+    <header class="section-head pro">
+      <span class="overline">Coordinación</span>
+      <h2>Convocatorias y Exámenes</h2>
+      <p class="sub">Banners oficiales. Cada imagen abre su PDF.</p>
+    </header>
+
+    <div class="slab">
+      <div class="banner-carousel" data-autoplay="5000">
+        <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+
+        <div class="carousel-track">
+          <!-- Banner EGEL -->
+          <article class="banner-card">
+            <a href="docs/EGEL-2025.pdf" target="_blank" rel="noopener">
+              <img src="img/convocatoria-egel.jpg"
+                   alt="Convocatoria EGEL — 08–11 DIC 2025" loading="lazy">
+            </a>
+            <div class="banner-meta">
+              <h3>Convocatoria EGEL</h3><span class="meta">08–11 DIC 2025</span>
+            </div>
+          </article>
+
+          <!-- Banner Graduación -->
+          <article class="banner-card">
+            <a href="docs/Convocatoria-Graduacion-2025.pdf" target="_blank" rel="noopener">
+              <img src="img/convocatoria-graduacion.jpg"
+                   alt="Convocatoria Ceremonia de Graduación — Generación 2021–2025" loading="lazy">
+            </a>
+            <div class="banner-meta">
+              <h3>Ceremonia de Graduación</h3><span class="meta">Gen. 2021–2025</span>
+            </div>
+          </article>
+
+          <!-- Duplica/pega más <article> según necesites -->
+        </div>
+
+        <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+        <div class="carousel-dots" aria-label="Paginación del carrusel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== Cursos ================== -->
+  <section id="cursos" class="mm-section">
+    <header class="section-head pro">
+      <span class="overline">Coordinación</span>
+      <h2>Cursos</h2>
+      <p class="sub">Banners de cursos. Cada imagen abre su PDF o convocatoria.</p>
+    </header>
+
+    <div class="slab">
+      <div class="banner-carousel" data-autoplay="5000">
+        <button class="carousel-btn prev" aria-label="Anterior">&#10094;</button>
+
+        <div class="carousel-track">
+          <!-- Ejemplos -->
+          <article class="banner-card">
+            <a href="docs/Curso-Ejemplo.pdf" target="_blank" rel="noopener">
+              <img src="img/cursos-mooc.jpg" alt="Curso MOOC – Corte ENE 2025" loading="lazy">
+            </a>
+            <div class="banner-meta">
+              <h3>Curso MOOC</h3><span class="meta">ENE 2025</span>
+            </div>
+          </article>
+
+          <article class="banner-card">
+            <a href="docs/Curso-Ejemplo.pdf" target="_blank" rel="noopener">
+              <img src="img/cursos-mooc.jpg" alt="Curso MOOC – Corte FEB 2025" loading="lazy">
+            </a>
+            <div class="banner-meta">
+              <h3>Curso MOOC</h3><span class="meta">FEB 2025</span>
+            </div>
+          </article>
+        </div>
+
+        <button class="carousel-btn next" aria-label="Siguiente">&#10095;</button>
+        <div class="carousel-dots" aria-label="Paginación del carrusel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================== Evaluación Docente ================== -->
+  <section id="evaluacion-docente" class="mm-section">
+    <header class="section-head pro">
+      <span class="overline">Coordinación</span>
+      <h2>Evaluación Docente</h2>
+      <p class="sub">Accede al SIE para contestar la encuesta de evaluación docente.</p>
+    </header>
+
+    <div class="slab one">
+      <div class="ed-panel">
+        <div class="ed-text">
+          <h3><i class="fa-solid fa-user-check"></i> Encuesta para estudiantes</h3>
+          <p>Tu participación es clave para la mejora continua.</p>
+        </div>
+        <a class="ed-btn" href="https://sie.merida.tecnm.mx/cgi-bin/sie.pl/" target="_blank" rel="noopener"
+           aria-label="Ir al SIE para contestar la evaluación docente">
+          Ir al SIE
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+
+
+    <footer class="footer">
+  <div class="footer_container">
+    <!-- Columna 1 -->
+    <div class="footer_col">
+      <img src="img/logo_gobierno.svg" alt="Gobierno de México" class="footer_logo">
+    </div>
+
+    <!-- Columna 2 -->
+    <div class="footer_col">
+      <h3>Enlaces</h3>
+      <ul>
+        <li><a href="#">Participa</a></li>
+        <li><a href="#">Marco Jurídico</a></li>
+        <li><a href="#">Plataforma Nacional de Transparencia</a></li>
+        <li><a href="#">Alerta</a></li>
+        <li><a href="#">Denuncia</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3 -->
+    <div class="footer_col">
+      <h3>¿Qué es gob.mx</h3>
+      <p><strong>Es el portal único de trámites, información y participación ciudadana.</strong> 
+      <a href="#">Leer más</a></p>
+      <ul>
+        <li><a href="#">Portal de datos abiertos</a></li>
+        <li><a href="#">Declaración de accesibilidad</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        <li><a href="#">Política de seguridad</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Barra inferior decorativa -->
+  <div class="footer_decor"></div>
+</footer>
+
+
+
+
+
+
+<!-- javascript -->
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const carousels = document.querySelectorAll(".banner-carousel");
+
+  carousels.forEach((carousel) => {
+    const track   = carousel.querySelector(".carousel-track");
+    const prevBtn = carousel.querySelector(".carousel-btn.prev");
+    const nextBtn = carousel.querySelector(".carousel-btn.next");
+    const dotsBox = carousel.querySelector(".carousel-dots");
+    const cards   = Array.from(track.querySelectorAll(".banner-card"));
+    const intervalMs = parseInt(carousel.dataset.autoplay || "5000", 10);
+
+    let index = 0;
+    let autoplayTimer = null;
+    let dots = [];
+
+    const getVisible = () => (window.innerWidth <= 768 ? 1 : 2);
+    const maxIndex   = () => Math.max(0, cards.length - getVisible());
+    const pageCount  = () => Math.max(1, Math.ceil(cards.length / getVisible()));
+    const pageIndex  = () => Math.floor(index / getVisible());
+
+    function getStepWidth(){
+      // Ancho de una card + gap real del track
+      const firstCard = cards[0];
+      if(!firstCard) return 0;
+      const cardWidth = firstCard.getBoundingClientRect().width;
+      const styles = getComputedStyle(track);
+      const gap = parseFloat(styles.columnGap || styles.gap || 0);
+      return cardWidth + gap;
+    }
+
+    function slideTo(i){
+      index = Math.max(0, Math.min(i, maxIndex()));
+      const offsetPx = index * getStepWidth();
+      track.style.transform = `translateX(-${offsetPx}px)`;
+      setActiveDot(pageIndex());
+    }
+
+    function nextSlide(){
+      if(index < maxIndex()) slideTo(index + 1);
+      else slideTo(0);
+    }
+    function prevSlide(){
+      if(index > 0) slideTo(index - 1);
+      else slideTo(maxIndex());
+    }
+
+    function buildDots(){
+      if(!dotsBox) return;
+      dotsBox.innerHTML = "";
+      dots = [];
+      const pages = pageCount();
+      for(let i=0; i<pages; i++){
+        const dot = document.createElement("button");
+        dot.className = "carousel-dot";
+        dot.type = "button";
+        dot.setAttribute("aria-label", `Ir a la página ${i+1}`);
+        dot.addEventListener("click", () => {
+          slideTo(Math.min(i * getVisible(), maxIndex()));
+          restartAutoplay();
+        });
+        dotsBox.appendChild(dot);
+        dots.push(dot);
+      }
+      setActiveDot(pageIndex());
+    }
+
+    function setActiveDot(p){
+      dots.forEach((d, i) => d.classList.toggle("active", i === p));
+    }
+
+    function startAutoplay(){
+      stopAutoplay();
+      if(intervalMs > 0) autoplayTimer = setInterval(nextSlide, intervalMs);
+    }
+    function stopAutoplay(){ if(autoplayTimer) clearInterval(autoplayTimer); }
+    function restartAutoplay(){ startAutoplay(); }
+
+    // Eventos
+    nextBtn && nextBtn.addEventListener("click", () => { nextSlide(); restartAutoplay(); });
+    prevBtn && prevBtn.addEventListener("click", () => { prevSlide(); restartAutoplay(); });
+
+    [track, dotsBox, prevBtn, nextBtn].forEach(el => {
+      el && el.addEventListener("mouseenter", stopAutoplay);
+      el && el.addEventListener("mouseleave", startAutoplay);
+    });
+
+    // Init
+    buildDots();
+    slideTo(0);
+    startAutoplay();
+
+    // Recalcular en resize
+    window.addEventListener("resize", () => {
+      // Si cambia el visible, cambia la cantidad de páginas
+      const oldPage = pageIndex();
+      buildDots();
+      slideTo(Math.min(oldPage * getVisible(), maxIndex()));
+    });
+  });
+});
+</script>
+
+
+
+
+</body>
+</html>
